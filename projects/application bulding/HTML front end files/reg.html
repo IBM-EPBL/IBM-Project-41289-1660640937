@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>DIGIT RECOGNIZER</h1>
+        </div>
+    </header>
+
+
+    <div class="full-container">
+
+        <div class="canvas-container">
+            <div>
+                <div style="width: 280px; height:280px">
+                    <canvas id="canvass" class="canvas" width="280" height="280">
+
+                    </canvas>
+                </div>
+                <div class="btns">
+                    <button id="clear-btn"><i class="fas fa-eraser"></i></button>
+                    <button id="predict-btn">PREDICT</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="result" class="result">
+
+            </div>
+            <p>result</p>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="assets/draw.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js" integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</body>
+
+</html
