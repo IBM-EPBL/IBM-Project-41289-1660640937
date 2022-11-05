@@ -1,0 +1,71 @@
+body{
+    background-image: url('indexwall.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    flex-direction: column;
+    margin-top: 130px;
+
+}
+.reg{
+    background-color: #2E8B57;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: aliceblue;
+    margin-left: 600px;
+    margin-bottom: 400px;
+    cursor: pointer;
+}
+.re{
+    margin-top: 30px;
+}
+.heading{
+    color: red;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin-left: 450px;
+    font-size: 40px;
+    
+    letter-spacing: 5px;
+    align-items: center;
+    
+}
+.cl{
+    margin-left: 90px;
+}
+.click{
+    margin-left: 550px;
+    background-color: #FFFF00;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: none;
+    
+}
+span{
+    font-size: 15px;
+}
+h5{
+    font-size: 15px;
+}
+ol{
+    margin-top: -20px;
+}
+.teammumbers{
+    background-color: aliceblue;
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    margin-left: 1150px;
+    margin-top: 180px;
+}
+p{
+    color: white;
+    margin-left: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
