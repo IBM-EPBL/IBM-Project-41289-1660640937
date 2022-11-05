@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+    <script>
+        function preview() {
+          frame.src=URL.createObjectURL(event.target.files[0]);
+      }
+      
+          $(document).ready(function() {
+                $('#clear_button').on('click', function() {
+                    $('#image').val('');
+                    $('#frame').attr('src',"");
+                  });
+              });
+      
+      </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>DIGIT RECOGNIZER</h1>
+        </div>
+    </header>
+
+
+    <div class="full-container">
+
+        <div class="canvas-container">
+            <div>
+                <section id="content">
+
+                    <div class="leftside">
+                    <form action="/predict" method="POST" enctype="multipart/form-data">
+                    <label>Select a image:</label>
+                    <input id="image" type="file" name="image" accept="image/png, image/jpeg" onchange="preview()"><br><br>
+                      <img id="frame" src="" width="100px" height="100px"/>
+                      <div class="buttons_div">
+                        <button type="submit" class="btn btn-dark" id="predict_button">Predict</button>
+                        <button type="button" class="btn btn-dark" id="clear_button">&nbsp Clear &nbsp</button>
+                      </div>
+                    </form>
+                    </div>
+              </section>
+            
+                
+            </div>
+        </div>
+
+        <div>
+            <div id="result" class="result">
+
+            </div>
+            <p>result</p>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="assets/draw.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js" integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</body>
+
+</html
