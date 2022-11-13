@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+</head>
+
+<style>
+    body{
+     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+
+    #rectangle{
+     width:200px;
+     height:200px;
+     background-color: #5796a5;
+     margin-left: 650px;
+     
+
+     border-radius: 25px;
+    }
+
+    #ans{
+  text-align: center;
+  font-size: 40px;
+  margin: 0 auto;
+  padding: 90px;
+  color: white;
+    }
+    h1{
+        text-align: center;
+        color: rgb(255, 72, 0);
+
+    }
+    .num{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+</style>
+<body style="background-image: url('index6.jpg')">
+    <h1>Handwritten Digit Recognition System</h1><br><br>
+    <h1 class="num">Predicted Number is:</h1>
+    <div id="rectangle">
+        <h1 id="ans"> {{num}}</h1>
+    </div>
+</body>
+</html>
